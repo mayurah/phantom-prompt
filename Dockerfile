@@ -24,7 +24,7 @@ CMD git config --global user.email "docker@example.com"; git config --global use
 # Build Docker Image from Dockerfile
 ## docker build https://github.com/mayurah/phantom-prompt.git#master:.
 # docker build . -t phantom-prompt
-# docker run -t -i -p 8812:80 phantom-prompt:latest
+# docker run -t -i -p 81:80 phantom-prompt:latest
 
 ## PUSH
 # docker login -u teamfdse
@@ -33,5 +33,5 @@ CMD git config --global user.email "docker@example.com"; git config --global use
 
 ## PULL
 # docker pull teamfdse/phantom-prompt
-# docker run -t -i -p 8812:80 teamfdse/phantom-prompt:latest
-# curl -v loalhost:8812
+# docker run -t -i -p 81:80 teamfdse/phantom-prompt:latest
+# curl -v loalhost:81
