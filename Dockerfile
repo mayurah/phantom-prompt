@@ -12,6 +12,15 @@ CMD git config --global user.email "docker@example.com"; git config --global use
 # For Bash:
 # npm install && cd node_modules/splunk-sdk/ && npm install && cd ./../../ && node app.js && node node_modules/splunk-sdk/sdkdo runserver
 
+# For auto-git updates on docker restart
+# Before Build
+# git remote set-url origin https://github.com/mayurah/phantom-prompt.git
+# git remote set-url upstream https://github.com/mayurah/phantom-prompt.git
+
+# While pushing as a user
+# git remote set-url origin git@github.com:mayurah/phantom-prompt.git
+# git remote set-url upstream git@github.com:mayurah/phantom-prompt.git
+
 # Build Docker Image from Dockerfile
 ## docker build https://github.com/mayurah/phantom-prompt.git#master:.
 # docker build . -t phantom-prompt
