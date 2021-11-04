@@ -19,6 +19,13 @@ b. In Terminal (Console)
 
 Nginx Reverse Proxy (optional)
 
+# Backup existing NGINX
+> **cp /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak**
+
+# Modify Nginx Proxy
+> **vim /etc/nginx/conf.d/default.conf**
+
+
 ```conf
 http {
 
@@ -36,3 +43,6 @@ http {
 
 }
 ```
+
+# Restart Nginx
+> service nginx restart 
