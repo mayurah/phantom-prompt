@@ -42,7 +42,7 @@ http {
 
   server {
     ...
-    location / {
+    location /prompt {
       proxy_pass http://prompt/prompt;
     }
   }
