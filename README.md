@@ -19,6 +19,13 @@ b. In Terminal (Console)
 
 Nginx Reverse Proxy (optional)
 
+# Nginx Higher Level Design
+
+```
+User --> Nginx (Port: 443) --upstream--> Containerized URL Prompt App (Port: 81)
+```
+
+
 # Backup existing NGINX
 > **cp /etc/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf.bak**
 
