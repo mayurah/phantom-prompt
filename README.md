@@ -39,20 +39,26 @@ User --> Nginx (Port: 443) --upstream--> Containerized URL Prompt App (Port: 81)
 ```conf
 http {
 
+  ... put below code inside http {}. (parallel to other *upstream* )
   upstream prompt {
     server 127.0.0.1:81;
   }
+  ...
+  
+  
 
   server {
-    ...
+    ... put below code inside server {}.  (parallel to other *location* )
     location /prompt {
       proxy_pass http://prompt/prompt;
     }
   }
-
+  ... 
 
 }
 ```
+
+* The only 
 
 # Restart Nginx
 > service nginx restart 
