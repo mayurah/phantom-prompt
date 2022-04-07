@@ -15,7 +15,9 @@ b. In Terminal (Console)
 - Pull docker image locally: `docker pull teamfdse/phantom-prompt:latest`
 - Run docker image 📦: `docker run -d -t -i -p 81:80 --restart always teamfdse/phantom-prompt:latest `
 
+## Verify Web Server
 
+> ```curl -vk http://localhost:81/``` should return `root`.
 
 Nginx Reverse Proxy (optional)
 
@@ -32,7 +34,7 @@ User --> Nginx (Port: 443) --upstream--> Containerized URL Prompt App (Port: 81)
 # Modify Nginx Proxy
 > **vim /etc/nginx/conf.d/default.conf**
 
-> ** Alternative nginx path ** `/opt/phantom/usr/nginx/conf/conf.d/phantom-nginx-server.conf`
+> **Alternative nginx path** `/opt/phantom/usr/nginx/conf/conf.d/phantom-nginx-server.conf`
 
 ```conf
 http {
