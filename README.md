@@ -32,6 +32,7 @@ User --> Nginx (Port: 443) --upstream--> Containerized URL Prompt App (Port: 81)
 # Modify Nginx Proxy
 > **vim /etc/nginx/conf.d/default.conf**
 
+> ** Alternative nginx path ** `/opt/phantom/usr/nginx/conf/conf.d/phantom-nginx-server.conf`
 
 ```conf
 http {
